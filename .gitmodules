@@ -1,0 +1,3 @@
+[submodule "ansible-requirements-updater"]
+	path = ansible-requirements-updater
+	url = https://github.com/geerlingguy/ansible-requirements-updater.git

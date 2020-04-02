@@ -1,0 +1,6 @@
+#!/bin/bash
+
+docker run -it --rm \
+	-v $(pwd):/data/ \
+	nouchka/ansible-requirements-updater \
+	ansible-playbook main.yml -e "requirements_file_path=/data/$1"
