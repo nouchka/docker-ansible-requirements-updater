@@ -1,0 +1,12 @@
+---
+roles:
+  - name: kbrebanov.easy_rsa
+    version: v1.0.1
+  - name: geerlingguy.ntp
+    version: 2.0.0
+  - name: geerlingguy.kubernetes
+    version: 4.1.0
+  - name: nickjj.locale
+    version: v0.1.1
+  - name: nouchka.ansible_dockerswarm
+    version: v1.3.2-beta

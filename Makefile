@@ -16,7 +16,7 @@ deb:
 	cp -Rf bin/* build/usr/sbin/
 
 run:
-	./bin/$(DOCKER_IMAGE) --version
+	./bin/$(DOCKER_IMAGE) requirements.yml
 
 install:
 	install bin/ansible-requirements-updater $(prefix)/bin/ansible-requirements-updater

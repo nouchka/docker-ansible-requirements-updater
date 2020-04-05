@@ -6,3 +6,5 @@ COPY ansible-requirements-updater/ /opt/ansible-requirements-updater/
 
 WORKDIR /opt/ansible-requirements-updater/
 VOLUME /data/
+
+CMD [ "ansible-playbook", "main.yml" , "-e", "requirements_file_path=/data/requirements.yml"]
