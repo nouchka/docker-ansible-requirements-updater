@@ -1,5 +1,4 @@
 DOCKER_IMAGE=ansible-requirements-updater
-VERSIONS=
 
 include Makefile.docker
 
@@ -17,6 +16,3 @@ deb:
 
 run:
 	./bin/$(DOCKER_IMAGE) requirements.yml
-
-install:
-	install bin/ansible-requirements-updater $(prefix)/bin/ansible-requirements-updater
