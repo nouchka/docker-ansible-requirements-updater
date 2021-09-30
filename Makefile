@@ -8,11 +8,7 @@ DEBVERSIONS=
 include Makefile.package
 
 check-version:
-	docker run --rm $(DOCKER_NAMESPACE)/$(DOCKER_IMAGE):$(VERSION) dpkg-query --showformat='$${Version} ' --show $(DOCKER_IMAGE)
-
-deb:
-	mkdir -p build/usr/sbin/
-	cp -Rf bin/* build/usr/sbin/
+	docker run --rm --entrypoint md5sum $(DOCKER_NAMESPACE)/$(DOCKER_IMAGE):$(VERSION) /opt/ansible-requirements-updater/main.yml
 
 run:
 	./bin/$(DOCKER_IMAGE) requirements.yml
